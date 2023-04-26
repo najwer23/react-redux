@@ -19,14 +19,14 @@ export default function CustomHashRoutes() {
 	return (
 		<HashRouter>
 			<Routes>
-				{routes.map((obj, i) => (
+				{routes.map(({path,element},i) => (
 					<Route
 						key={i}
-						path={obj.path}
+						path={path}
 						element={
 							<>
 								<ScrollToTop />
-								{obj.element}
+								{element}
 							</>
 						}
 					/>
