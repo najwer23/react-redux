@@ -2,6 +2,7 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import Main from "../main/Main";
 import Error404 from '../pages/error404/Error404'
+import FetchTest from '../features/fetch/FetchTest'
 
 
 export default function CustomHashRoutes() {
@@ -13,6 +14,10 @@ export default function CustomHashRoutes() {
 		{
 			path: "/",
 			element: <Main />
+		},
+		{
+			path: "/fetch",
+			element: <FetchTest />
 		},
 	];
 
